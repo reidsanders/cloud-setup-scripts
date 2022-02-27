@@ -13,12 +13,14 @@ Push the remote-scripts directory to your tpu vm.
 Run from with
 For some reason conda init does not work in a bash script. So run these commands
 
-> $ conda create -n diffusion python=3.8
-> $ conda init bash
-> $ conda activate diffusion
-> $ cd YOUR_PROJECT
-> $ pip install -r requirements.txt
-> $ pip3 install torch_xla[tpuvm] -f https://storage.googleapis.com/tpu-pytorch/wheels/tpuvm/torch_xla-1.10-cp38-cp38-linux_x86_64.whl
+```sh
+$ conda create -n diffusion python=3.8
+$ conda init bash
+$ conda activate diffusion
+$ cd YOUR_PROJECT
+$ pip install -r requirements.txt
+$ pip3 install torch_xla[tpuvm] -f https://storage.googleapis.com/tpu-pytorch/wheels/tpuvm/torch_xla-1.10-cp38-cp38-linux_x86_64.whl
+```
 
 ### Tpu setup
 
