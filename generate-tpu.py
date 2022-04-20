@@ -20,11 +20,11 @@ def get_args(arg_input):
         contains namespace with keys and values for each parser argument
 
     """
-    parser = argparse.ArgumentParser(description='danbooru2018 utility script')
+    parser = argparse.ArgumentParser(description='tpu creation script')
     parser.add_argument(
         '--name',
         type=str,
-        default='gen-tpu',
+        default='tpu',
         help='Name to use for tpu vm',
     )
     parser.add_argument(
@@ -36,7 +36,7 @@ def get_args(arg_input):
     parser.add_argument(
         '--version',
         type=str,
-        default='tpu-vm-pt-1.10',
+        default='tpu-vm-pt-1.11',
         help='software version to load',
     )
     parser.add_argument(
