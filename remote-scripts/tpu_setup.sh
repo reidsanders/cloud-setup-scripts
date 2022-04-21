@@ -10,7 +10,7 @@ chmod +x ./Miniconda3-latest-Linux-x86_64.sh
 
 git clone --branch patch-1 https://github.com/computertoucher/tmux-config.git
 ./tmux-config/install.sh
-sleep .5
+sleep .1
 cp .inputrc ~/
 sudo apt install python-is-python3
 
